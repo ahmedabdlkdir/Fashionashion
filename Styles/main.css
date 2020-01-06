@@ -1,0 +1,260 @@
+
+body {
+    width: 100%;
+    font-family: sans-serif;
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+  }
+  
+  /* scroll bar */
+    body::-webkit-scrollbar {width: 10px;}
+    body::-webkit-scrollbar-thumb {
+    background-color: #a22b73;
+    border: 1.2px solid  #272533;
+  }
+  
+  header {
+    width: 100%;
+    min-width: 360px;
+  }
+  nav {
+    background: linear-gradient(to right, #272533 16%,#a22b73 100%);;
+    height: 50px;
+    font-family: 'Fredoka One', cursive;
+  }
+  nav ul {
+    list-style: none;
+    margin-left: 50px;
+  }
+  nav ul li {
+    list-style-type: none;
+    display: inline;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    transform: skew(-20deg);
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+  }
+  
+  .odd {background-color: RGBA(162,43,115,.7);}
+  .odd:hover {
+    background-color: #fff;
+    color: #a22b73;
+    text-decoration: none;
+  }
+  .even {background-color: RGBA(39,37,51,.7);}
+
+  .even:hover {
+    background-color: #fff;
+    color: #272533;
+    text-decoration: none;
+  }
+  
+  .currenteven {
+    background-color: #fff;
+    color: #272533;
+    text-decoration: none;
+  }
+  .currentodd {
+    background-color: #fff;
+    color: #a22b73;
+    text-decoration: none;
+  }
+  
+
+  
+  .nav-image-container {
+    /* position: relative; */
+    background: linear-gradient(to right, #272533 16%,#a22b73 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-width: 360px;
+    height: 59vw;
+  }
+  /* default h1 text for edge and IE */
+
+  main {
+    min-height: 100%;
+    margin-bottom: 120px;
+  }
+/* for ms edge and other browsers except chrome */
+/* this give the heading the gradient like look */
+  h1 {
+    display: table;
+    margin: 0 auto;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    font-size: 5em;
+    margin-bottom: 105px;
+  }
+
+  main .txt1{
+    color:  #272533;
+  }
+  main .txt2 {
+    color: #a22b73;
+  }
+
+  main:after{
+    content: "";
+    display: block;
+    height: 30px;
+  }
+
+  .awards-container {width: 100%;}
+  .awards{
+    margin-bottom: 19px;
+  }
+  .awards, .events, .services, .locations{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .awards div, .services div, .locations div, .events div {
+    width: 350px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .events h2 {
+    height: 70px;
+    margin-bottom: -9px;
+    text-align: center;
+  }
+  
+  
+  .jointeamimg {
+    background-image: url('../img/jointeam.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .careers p {
+    text-align: center;
+    font-weight: normal;
+  }
+  .openings div {
+    background-color:#a22b73 ;
+    border-top: 5px solid #272533;
+    border-bottom: 5px solid #272533;
+    color: #fff;
+  }
+  
+  .openings ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .openings h3, .openings p {
+    padding-left: 15px;
+  }
+  
+
+  .about {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .about img {
+    height: 25%;
+    width: 25%;
+    float: left;
+    margin-right: 15px;
+  }
+  .about p {
+  margin-left: 15x;
+  }
+
+  footer{
+    clear: both;
+    width: 100%;
+    position: absolute;
+    height: 80px;
+    background: linear-gradient(to right, #272533 16%,#a22b73 100%);
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+  
+  footer p {
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  
+   @media only screen and (max-width: 815px) {
+    nav ul li a {
+      font-size: .9em;
+      width: 90px;
+    }
+   }
+  
+   @media only screen and (max-width: 755px){
+     nav ul li a {
+       font-size: .8em;
+       width: 70px;
+     }
+   }
+   /* changes the paddign between li items in the nav bar  */
+  @media only screen and (max-width : 575px) {
+    header {height: auto;}
+    nav {height: auto;}
+    nav ul {margin-left: 2px;}
+    nav ul li {height: 35px;}
+    nav ul li a {
+     text-decoration: none;
+     color: #fff;
+     display: inline;
+     text-align: center;
+     font-size: .8em;
+   }
+   }
+  
+   @media only screen and (max-width: 438px){
+    nav ul li {height: 25px;}
+   }
+  
+   @media only screen and (max-widht: 367px)
+   {
+     .lifestyle{width: 100%;}
+   }
+   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+    .lifestyle-container {height: 10px;}
+  }
+  
+  
+  /* just for chrome */
+  @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
+    h1 {
+      display: table;
+      margin: 0 auto;
+      font-family: "Roboto Slab";
+      font-weight: 400;
+      font-size: 5em;
+      background: linear-gradient(to right, #272533 16%,#a22b73 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 200px;
+    }
+
+    .openings div {
+      background: linear-gradient(to right,#a22b73, #272533 40% 100%);
+      color: #fff;
+    }
+  
+  }
+  
